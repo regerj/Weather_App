@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/newbg" />
+            android:src="@drawable/mountains_minimal" />
 
         <!--City Name-->
         <TextView
@@ -182,18 +182,20 @@
 
                 <ImageView
                     android:id="@+id/day0Icon"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_search"
-                    app:tint="@color/white" />
+                    android:src="@drawable/ic_search" />
 
                 <TextView
                     android:id="@+id/highLow0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_below="@id/day0Icon"
                     android:gravity="center"
                     android:text="10"
                     android:textColor="@color/white" />
@@ -201,8 +203,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/highLow0"
                     android:gravity="center"
                     android:text="Today"
+                    android:layout_weight="1"
                     android:textColor="@color/white" />
 
             </LinearLayout>
@@ -223,15 +227,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_search"
-                    app:tint="@color/white" />
+                    android:src="@drawable/ic_search" />
 
                 <TextView
                     android:id="@+id/highLow1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_below="@id/day1Icon"
                     android:gravity="center"
                     android:text="10"
                     android:textColor="@color/white" />
@@ -241,6 +247,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_below="@id/highLow1"
                     android:gravity="center"
                     android:text="Tomorrow"
                     android:textColor="@color/white" />
@@ -264,15 +271,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_search"
-                    app:tint="@color/white" />
+                    android:src="@drawable/ic_search" />
 
                 <TextView
                     android:id="@+id/highLow2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_below="@id/day2Icon"
                     android:gravity="center"
                     android:text="10"
                     android:textColor="@color/white" />
@@ -281,8 +290,10 @@
                     android:id="@+id/dayOfWeek2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/highLow2"
                     android:gravity="center"
                     android:text="Temp"
+                    android:layout_weight="1"
                     android:textColor="@color/white" />
 
 

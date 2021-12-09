@@ -192,9 +192,9 @@ class MainActivity : AppCompatActivity() {
             val objDay2Weather = objDay2.getJSONObject("weather")
 
             // Set high and low text
-            highLow0.text = objDay0.getString("low_temp") + "\u2103" + "/" + objDay0.getString("high_temp") + "\u2103"
-            highLow1.text = objDay1.getString("low_temp") + "\u2103" + "/" + objDay1.getString("high_temp") + "\u2103"
-            highLow2.text = objDay2.getString("low_temp") + "\u2103" + "/" + objDay2.getString("high_temp") + "\u2103"
+            highLow0.text = objDay0.getString("low_temp") + "\u2103" + " / " + objDay0.getString("high_temp") + "\u2103"
+            highLow1.text = objDay1.getString("low_temp") + "\u2103" + " / " + objDay1.getString("high_temp") + "\u2103"
+            highLow2.text = objDay2.getString("low_temp") + "\u2103" + " / " + objDay2.getString("high_temp") + "\u2103"
 
             // Find day of week in two days
             var twoDay = ""
@@ -212,9 +212,9 @@ class MainActivity : AppCompatActivity() {
             // Set it
             dayOfWeek2.text = twoDay
 
-            var resourceId0 = resources.getIdentifier(objDay0Weather.getString("icon"), "png", this.packageName)
-            var resourceId1 = resources.getIdentifier(objDay1Weather.getString("icon"), "png", this.packageName)
-            var resourceId2 = resources.getIdentifier(objDay2Weather.getString("icon"), "png", this.packageName)
+            var resourceId0 = resources.getIdentifier(objDay0Weather.getString("icon"), "drawable", this.packageName)
+            var resourceId1 = resources.getIdentifier(objDay1Weather.getString("icon"), "drawable", this.packageName)
+            var resourceId2 = resources.getIdentifier(objDay2Weather.getString("icon"), "drawable", this.packageName)
 
             day0Icon.bringToFront()
             day1Icon.bringToFront()
